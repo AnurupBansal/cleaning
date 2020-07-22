@@ -1,3 +1,4 @@
+features <- read.table("features.txt", col.names = c("n","functions"))
 activities <- read.table("activity_labels.txt", col.names = c("code", "activity"))
 subject_test <- read.table("test/subject_test.txt", col.names = "subject")
 x_test <- read.table("test/X_test.txt", col.names = features$functions)
